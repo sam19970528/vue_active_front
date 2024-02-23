@@ -1,0 +1,63 @@
+.form-input {
+    width: 260px;
+    height: 40px;
+    color: #333;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 15px;
+    &:focus-visible {
+        outline: 0;
+    }
+}
+@mixin form-input($bg-image) {
+    @extend .form-input;
+    background: #fff url(#{$bg-image}) repeat-x center top;
+}
+
+.form-input-01 {
+    @include form-input("assets/input_bg01.png");
+}
+
+.form-input-02 {
+    @include form-input("assets/input_bg02.png");
+}
+
+.form-input-03 {
+    @include form-input("assets/input_bg03.jpg");
+}
+.form-label {
+    text-align: right;
+    width: 180px;
+    color: #444;
+    font-size: 14px;
+}
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+.submit-orange-btn {
+    background: #ea5101;
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    padding: 0;
+}
+.link-golden {
+    display: inline-block;
+    margin: 0 10px;
+    color: #c1a367;
+    font-size: 14px;
+    text-align: center;
+    width: 160px;
+    font-weight: bold;
+    border: 1px solid #c1a367;
+    border-radius: 25px;
+    height: 40px;
+    background: #fff;
+}

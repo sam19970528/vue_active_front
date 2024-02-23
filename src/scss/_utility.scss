@@ -1,0 +1,147 @@
+@for $i from 4 through 20 {
+    .fs-#{$i * 2} {
+        font-size: $i * 2px;
+    }
+}
+@for $i from 1 through 10 {
+    .w-#{$i * 10} {
+        width: $i * 10% !important;
+    }
+}
+
+@for $i from 30 through 200 {
+    .w-#{$i}px {
+        width: $i * 1px !important;
+    }
+}
+
+.text-main {
+    color: $main-color;
+}
+.text-gold {
+    color: #e3d673;
+}
+.bg-main {
+    background-color: $main-color;
+}
+.bg-purple {
+    background-color: $purple;
+}
+.bg-pink {
+    background-color: $pink;
+}
+
+.text-purple {
+    color: $purple;
+}
+.text-pink {
+    color: $pink;
+}
+.text-lightBlue {
+    color: $light-blue;
+}
+
+.text-remind {
+    color: #e8697f;
+}
+
+.text-lightGrey {
+    color: #cccccc;
+}
+
+.text-darkGrey {
+    color: #999898;
+}
+
+.bg-lightBlue {
+    background: $light-blue;
+}
+
+.flex-ai-center {
+    display: flex;
+    align-items: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
+.border-bottom-danger {
+    border-bottom: 1px solid $danger !important;
+}
+
+.border-bottom-lightBlue {
+    border-bottom: 1px solid $light-blue;
+}
+.border-pink {
+    border-color: $pink !important;
+}
+
+.border-purple {
+    border-color: #c926e4 !important;
+}
+.raduis-50 {
+    border-radius: 50%;
+}
+.animate__boot {
+    animation-duration: 0.2s;
+}
+.po-relative {
+    position: relative;
+}
+
+.po-absolute {
+    position: absolute;
+}
+.r-0 {
+    right: 0;
+}
+.rotate-180deg {
+    transform: rotate(180deg);
+    transition: all 0.3s;
+}
+
+.rotate-360deg {
+    transform: rotate(360deg);
+    transition: all 0.3s;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #000;
+}
+.btn-purple {
+    background-color: #c926e4;
+    color: #fff;
+}
+.btn-pink {
+    background-color: $pink;
+    color: #fff;
+}
+strong {
+    font-size: 20px;
+}
+.swal2-popup {
+    height: 300px;
+}
+.swal2-container.swal2-center > .swal2-popup {
+    grid-row: 1/3 !important;
+}
+.flex-auto {
+    flex: 0 0 auto;
+}
+.h-750px {
+    height: 750px !important;
+}
+.mt-35px {
+    margin-top: 35px;
+}
+.line-through-pink {
+    text-decoration: line-through 3px $pink;
+}
+.line-through-purple {
+    text-decoration: line-through 3px $purple;
+}
+.btn-light-brown {
+    background: #c3aa8f;
+    color: #fff;
+}

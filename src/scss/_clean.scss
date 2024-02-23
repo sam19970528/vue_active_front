@@ -1,0 +1,41 @@
+.form-control {
+    &.under {
+        border: none;
+    }
+    &:focus,
+    &.is-invalid:focus {
+        box-shadow: none;
+    }
+    &:disabled,
+    &:read-only {
+        background: transparent;
+        color: #aaa;
+    }
+}
+.btn:focus {
+    box-shadow: none;
+}
+
+/* 清除number上下箭頭 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    &:hover {
+        color: #000;
+    }
+}
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style: none;
+    }
+}
+.dropdown-item {
+    cursor: pointer;
+}
